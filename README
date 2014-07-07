@@ -1,0 +1,32 @@
+Train Problem Exercise
+
+Is an Restfull Api that calculates for a given graph the cost, steps and path from a source to a destination node.
+
+Following you can find the available resources:
+
+ - /edge
+
+    Method: GET List all the edges
+            POST Creates a new edge
+
+            Payload :
+                - src    - source node
+                - dst    - destination node
+                - length - cost of src to dst
+
+ - /route
+     Method: POST Creates a new route
+
+             Payload :
+                 - path   - pre-define path
+                 - src    - source node
+                 - dst    - destination node
+                 - length - cost of src to dst
+                 - cost   - cost limit
+                 - step   - step limit
+
+
+To run this api server application you will need to run the Sinatra by:
+
+ 1. bundle install
+ 2. run app.rb
